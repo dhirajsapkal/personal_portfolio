@@ -1,0 +1,19 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.mosaicflow__column {
+  float:left;
+}
+
+.mosaicflow__item {
+  position:relative;
+}
+.mosaicflow__item img {
+  display:block;
+  width:100%;
+  max-width:500px;
+  height:auto;
+}
