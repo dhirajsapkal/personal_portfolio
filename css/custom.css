@@ -63,11 +63,6 @@
 
 /* gallery section ends */
 
-.content-b{
-  z-index: 10;
-}
-
-
 .banner_secondary {
   font-size: 20px;
   font-family: "Proxima Nova";
@@ -92,7 +87,7 @@
   position: fixed;
   width: 100%;
   background: transparent;
-/*   background-color: rgb(255, 255, 255); */
+  /*background-color: rgb(255, 255, 255);*/
   box-shadow: 0.5px 0.866px 3px 0px rgba(0, 0, 0, 0.055);
   border: none;
 }
@@ -165,23 +160,62 @@
 /* .nav_links > ul > li > a:hover, .nav_links > ul > li > a:focus {
 } */
 
-.background {
-  position: relative;
-}
 
  .background_mask {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.60);
+  background-color: rgba(0, 0, 0, 0.50);
   z-index:1;
 }
 
+ .fullscreen{
+  position: relative;
+ }
+
 
  video#bgvid {
-position: fixed; right: 0; bottom: 0;
-min-width: 100%; min-height: 100%;
-width: auto; height: auto; z-index: -100;
-background: url(polina.jpg) no-repeat;
-background-size: cover;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+}
+
+
+.heading_main {
+  color: #000000;
+  font-weight: 600;
+  text-align: left;
+}
+
+.padding_topandbot {
+  padding-top: 77px;
+  padding-bottom: 77px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+.parallax_container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.background {
+  z-index: -10;
+  top: 0;
+}
+
+#scene {
+  min-height: 100%;
+  width: 100%;
+  text-align: center;
 }
