@@ -1,3 +1,7 @@
+.gallery{
+  overflow: hidden;
+}
+
 
 .gallery_image {
   display: inline-block;
@@ -5,7 +9,7 @@
   overflow: hidden;
   position: relative;
 /*  width: 25%;*/
-  width: 33.33%;
+  width: 33.33333333333333%;
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
@@ -107,6 +111,7 @@
 
 .navbar-default .navbar-nav > li > a:hover{
   color: #ffffff;
+  -webkit-transition: color .2s ease-out;
 }
 
 .nav > li > a {
@@ -158,13 +163,18 @@
 
 .background {
   position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
 }
 
 .background_mask {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.60);
   z-index:1;
 }
 
