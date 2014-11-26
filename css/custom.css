@@ -237,13 +237,23 @@
 }
 
 .background_image{
-  background-image: url('../images/Background6.jpg');
+  background-image: url('../images/Background7.jpg');
   position: absolute;
   background-size: cover;
   width: 115%;
   top: -5%;
   left: -10%;
   bottom: -5%;
+}
+
+.background_image:after{
+  content: "";
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.30);
+  z-index:1;
 }
 
 .secondary_container{
@@ -260,8 +270,10 @@
 }
 
 .content-primary {
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 50px;
+  font-weight: 300;
+  color: #ffffff;
+  padding-left: 30px;
 }
 .content {
   margin: 0 0 12.5px;
@@ -270,15 +282,20 @@
   left: 50%;
   width: 500px;
   text-align: center;
-  margin-left: -250px;
+  margin-left: -270px;
   transform: translateY(-50%);
+  font-family: "Proxima Nova";
 }
 
 .content-1 {
-  transform: translateY(-10 0%);
+  transform: translateY(-120%);
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .content-2 {
-  transform: translateY(0%);
+  transform: translateY(20%);
   padding-left: 38px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
 }
