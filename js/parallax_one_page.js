@@ -35,6 +35,7 @@ function backgroundResize(){
         // overflowing difference
         var diff = parseFloat(path.attr("data-diff"));
         diff = diff ? diff : 0;
+
         // remaining height to have fullscreen image only on parallax
         var remainingH = 0;
         if(path.hasClass("parallax") && !$("html").hasClass("touch")){
