@@ -262,6 +262,8 @@
 /*  background-color: black;*/
 }
 
+/*Banner*/
+
 #scene {
   overflow: hidden;
 }
@@ -271,6 +273,7 @@
   height: 100%;
   z-index: -10;
 }
+
 
 .background_image{
   background-image: url('../images/Background.jpg');
@@ -282,7 +285,50 @@
   bottom: -5%;
 }
 
-.background_image:after{
+.tree{
+  height: 80%;
+  position: absolute;
+  left: -30px;
+  top: 29%;
+}
+
+.grass{
+  position: absolute;
+  width: 130%;
+  left: -60px;
+}
+
+.grass6{
+  top: 90%;
+  z-index: 6;
+}
+
+.grass5{
+  top: 85%;
+  z-index: 5;
+}
+
+.grass4{
+  top: 80%;
+  z-index: 4;
+}
+
+.grass3{
+  top: 75%;
+  z-index: 3;
+}
+
+.grass2{
+  top: 70%;
+  z-index: 2;
+}
+
+.grass1{
+  top: 68%;
+  z-index: 1;
+}
+
+/* .background_image:after{
   content: "";
   left: 0;
   position: absolute;
@@ -291,7 +337,7 @@
   background-color: rgba(0, 0, 0, 0.30);
   z-index:1;
 }
-
+ */
 .secondary_container{
   width: 100%;
 }
@@ -326,11 +372,13 @@
 .content-1 {
   transform: translateY(-120%);
   font-size: 20px;
+  font-weight: 300;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .content-2 {
   transform: translateY(20%);
+  font-weight: 300;
   padding-left: 38px;
   font-size: 20px;
   color: rgba(255, 255, 255, 0.6);
